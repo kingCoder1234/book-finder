@@ -1,0 +1,52 @@
+.homepage-container {
+    position: relative;
+    height: 100vh;
+    background-image: url('../images/home_bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+.homepage-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.homepage-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.homepage-description {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.homepage-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.homepage-button:hover {
+    background-color: #0056b3;
+}
